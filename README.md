@@ -12,9 +12,10 @@ ADD php-apache.yml
 kubectl apply -f .\php-apache.yaml
 #### 確認
 kubectl get deploy php-apache -n hpa 
-'''
+
+```
 NAME         READY   UP-TO-DATE   AVAILABLE   AGE
 php-apache   1/1     1            1           73s
-'''
+```
 
 ### 布署hpa()
